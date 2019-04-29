@@ -5,45 +5,41 @@ body {
   margin:           0px;
 }
 
-#header {
+header {
   background-color: #675c47;
-  margin:           10px 10px 0px 10px;
+  margin:10px 10px 0px 10px;
   height:           108px;
 }
 
-
-#main {
-  display : table-cell;
+section#main , section#blog {
+  display: table-cell;
   background:       #efe5d0 url(images/background.gif) top left;
   font-size:        105%;
   padding:          15px;
-  margin:           0px 10px 10px 10px;
   vertical-align: top;
 }
 
-#sidebar {
+aside {
   display: table-cell;
   background:       #efe5d0 url(images/background.gif) bottom right;
   font-size:        105%;
   padding:          15px;
-  margin:           0px 10px 10px 10px;
- vertical-align: top;
-}
-#footer {
-  background-color: #675c47;
-  color:           #efe5d0;
-  text-align:       center;
-  padding:         15px;
-  margin:          0px 10px 10px 10px;
-  font-size:       90%;
-  clear:right;
+     vertical-align: top;
 }
 
- h1 {
-   font-size:    120%;
-   color:       #954b4b;
- }
- 
+footer {
+  background-color: #675c47;
+  color:            #efe5d0;
+  text-align:       center;
+  padding:          15px;
+  margin:           0px 10px 10px 10px;
+  font-size:        90%;
+}
+
+h1 {
+  font-size:        120%;
+  color:            #954b4b;
+}
 
 .slogan { color: #954b4b; }
 
@@ -62,64 +58,85 @@ a:visited {
   text-decoration:  none;
   border-bottom:    thin dotted #675c47;
 }
-#allcontent{
-  width: 800px;
-  padding-top:   5px;
-  padding-bottom: 5px;
-  background-color: #675c47;
-  margin-left : auto;
-  margin-right: auto;
+
+section#drinks{
+  display: table-cell;
+  background-color: #efe5d0;
+  width: 20%;
+  padding: 15px;
+  vertical-align: top;
 }
-#div#tableContainer {
-  display : table;
+div#tableContainer{
+  display: table;
 }
 
-
-#tableRow {
-  display : table-row;
+div#tableRow{
+  display: table-row;
 }
-#tableContainer {
-  display : table;
-  border-spacing : 10px;
+#tableContainer{
+  display: table;
+  border-spacing: 10px;
 }
 #tableRow{
   display: table-row;
 }
-#drinks{
-  display: table-cell;
-  background-color;#efe5d0;
-  width: 20%;
-  padding:15px;
-  vertical-align:top;
-}
 
-.headerImageLeft{
-  float: right;
-  background-image:  ur1(image/header.gif);
+
+.HL{
+  display: inline-block;
+  float: left;
+  background-image: url(images/header.gif);
   width: 400px;
   height: 100px;
 }
-.headerImageRight{
-  float:right;
-  background-image:  ur1(images/header.gif);
+.HR{
+  display: inline-block;
+  float: right;
+  background-image: url(images/header.gif);
   width: 400px;
   height: 100px;
   background-position: -400px,0px;
 }
 #award{
-   position: absolute;
-   top:   30px;
-   left:  365px;
-
+  position: absolute;
+  top:30px;
+  left: 365px;
 }
-#coupon {
-  position: fixed;
-  top: 350px;
-  left:-90px;
-}
-#coupon a, img{
-  border: none;
-}
+ #coupon{
+   position: fixed;
+   top:350px;
+   left: -90px;
+ }
+ header.top {
+   background-color: #675c47;
+   margin: 10px 10px 0px 10px;
+   height: 108px;
+ }
+ header.top img#headerSlogan {
+ float:right;
+ }
+ nav ul{
+   margin: 0px;
+   background-color: #efe5d0;
+   margin: 10px 10px 0px 10px;
+   list-style-type: none;
+   padding: 5px 0px 5px 0px;
+ }
  
+nav ul li {
+   display: inline;
+   padding: 5px 0px 5px 10px;
+ }
 
-
+ nav ul li a :link,ul li a:visited{
+   color: #954b4b;
+   border-bottom: none;
+   font-weight: bold;
+ }
+ nav ul li.selected{
+   background-color: #c8b99c;
+ }
+ nav{
+   background-color: #efe5d0;
+   margin:10px 10px 0px 10px;
+ }
